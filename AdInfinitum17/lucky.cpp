@@ -13,28 +13,20 @@ int main()
 		{
 			std::cout << "Yes\n";
 		}
-		else if (n % 4 == 3)
+		else if (n % 4 == 3 && n > 3)
 		{
-			if (n > 3)
-				std::cout << "Yes\n";
-			else
-				std::cout << "No\n";
+			std::cout << "Yes\n";
 		}
-		else if (n % 4 == 2)
+		else if (n % 4 == 2 && n > 12)
 		{
-			if (n > 12)
-				std::cout << "Yes\n";
-			else
-				std::cout << "No\n";
+			std::cout << "Yes\n";
 		}
-		else if (n % 4 == 1)
-		{
-			if (n > 20)
-				std::cout << "Yes\n";
-			else
-				std::cout << "No\n";
+		else if (n % 4 == 1 && n > 20)
+		{	
+			std::cout << "Yes\n";
 		}
+		else
+			std::cout << "No\n";
 	}
-
 	return 0;
 }
